@@ -1,0 +1,72 @@
+@import "./reset.scss";
+@import "./fonts.scss";
+@import "./colors.scss";
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.main {
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+  padding-top: 45px;
+}
+
+.header {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    width: 100%;
+    max-width: 149px;
+    height: 37px;
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__menu {
+    width: 100%;
+    max-width: 451px;
+    & ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+      & li {
+        margin-right: 40px;
+        & a {
+          text-decoration: none;
+          font-size: 16px;
+          line-height: 19px;
+          color: $gray;
+        }
+      }
+    }
+  }
+
+  &__sign {
+    display: flex;
+
+    &-in {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: $black;
+      margin-right: 30px;
+    }
+
+    &-up {
+      padding: 13px 45px;
+      color: $red;
+      border: 1px solid $red;
+      border-radius: 50px;
+    }
+  }
+}
+
