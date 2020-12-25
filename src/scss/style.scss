@@ -70,3 +70,51 @@ body {
   }
 }
 
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 88px;
+  &__left-side {
+    width: 100%;
+    max-width: 555px;
+  }
+
+  &__heading {
+    color: $black;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 70px;
+    & span {
+      font-weight: bold;
+    }
+  }
+
+  &__description {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    color: $gray;
+  }
+
+  &__get-started {
+    background-color: $light-red;
+    border-radius: 10px;
+    color: $white;
+    padding: 18px 78px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    box-shadow: 0px 15px 54px rgba(245, 56, 56, 0.35);
+    margin-top: 50px;
+  }
+
+  &__right-side {
+    width: 100%;
+    max-width: 611px;
+    height: 382px;
+    background-image: url("../img/hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
