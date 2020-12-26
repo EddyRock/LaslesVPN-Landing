@@ -10,6 +10,12 @@
     <%= _.template(require('./../includes/hero.html').default)(data) %>
     <%= _.template(require('./../includes/features.html').default)(data) %>
   </div>
+
+  <div class="main-dark">
+    <div class="main-dark__wrapper">
+      <%= _.template(require('./../includes/plan.html').default)(data) %>
+    </div>
+  </div>
   <script src="js/bundle.js"></script>
 </body>
 </html>

@@ -11,6 +11,16 @@ body {
   max-width: 1140px;
   margin: auto;
   padding-top: 45px;
+
+  &-dark {
+    background-color: $light-grey;
+    width: 100%;
+    &__wrapper {
+      width: 100%;
+      max-width: 1090px;
+      margin: auto;
+    }
+  }
 }
 
 .header {
@@ -205,6 +215,112 @@ body {
           height: 24px;
           padding-right: 10px;
         }
+      }
+    }
+  }
+}
+
+.plan {
+  padding-top: 80px;
+  background-color: $light-grey;
+
+  & h2 {
+    font-size: 35px;
+    line-height: 50px;
+    color: $black;
+    text-align: center;
+  }
+  & p {
+    font-size: 16px;
+    line-height: 30px;
+    color: $gray;
+    max-width: 555px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    font-weight: 300;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+  }
+  &__item-banner {
+    display: block;
+    max-width: 144px;
+    margin: auto;
+    margin-top: 80px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 330px;
+    height: 760px;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      border-color: $light-red;
+      & button {
+        background-color: $light-red;
+        box-shadow: 0px 15px 20px rgba(245, 56, 56, 0.35);
+        color: #fff;
+        transform: translateY(-7px);
+      }
+    }
+
+    & h4 {
+      font-size: 18px;
+      line-height: 30px;
+      color: $black;
+      text-align: center;
+      margin-top: 30px;
+      & span {
+        color: $gray;
+      }
+    }
+
+    & ul {
+      width: 100%;
+      max-width: 200px;
+      margin: auto;
+      margin-top: 30px;
+    }
+
+    & li {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: 30px;
+      color: $gray;
+      margin-bottom: 10px;
+      & img {
+        margin-right: 20px;
+      }
+    }
+
+    &-footer {
+      display: flex;
+      flex-direction: column;
+
+      & h4 {
+        font-size: 25px;
+        line-height: 30px;
+        color: $black;
+        margin-bottom: 20px;
+      }
+
+      & button {
+        border-radius: 50px;
+        border: 2px solid $light-red;
+        color: $light-red;
+        padding: 13px 62px;
+        margin: auto;
+        margin-bottom: 50px;
+        transition: all 0.3s ease 0s;
       }
     }
   }
