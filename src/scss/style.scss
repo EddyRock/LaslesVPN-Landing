@@ -71,10 +71,13 @@ body {
 }
 
 .hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 88px;
+
+  &__sides-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   &__left-side {
     width: 100%;
     max-width: 555px;
@@ -116,5 +119,46 @@ body {
     background-image: url("../img/hero.png");
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &__descriptions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 15px 54px rgba(13, 16, 37, 0.35);
+    border-radius: 10px;
+    margin-top: 103px;
+    height: 200px;
+  }
+
+  &__description-item {
+    width: 100%;
+    max-width: 273px;
+    display: flex;
+    align-items: center;
+    border-right: 2px solid #EEEFF2;
+    height: 125px;
+
+    & img {
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  &__subtitle {
+    margin-left: 35px;
+
+    & h4 {
+      font-weight: bold;
+      font-size: 25px;
+      color: $black;
+      padding-bottom: 5px;
+    }
+
+    & p {
+      font-size: 20px;
+      color: $gray;
+    }
   }
 }
