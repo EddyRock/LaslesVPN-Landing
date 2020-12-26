@@ -137,7 +137,7 @@ body {
     max-width: 273px;
     display: flex;
     align-items: center;
-    border-right: 2px solid #EEEFF2;
+    border-right: 2px solid $cream;
     height: 125px;
 
     & img {
@@ -159,6 +159,53 @@ body {
     & p {
       font-size: 20px;
       color: $gray;
+    }
+  }
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 53px;
+  padding-bottom: 131px;
+
+  & img {
+    width: 100%;
+    max-width: 508px;
+    height: 414px;
+  }
+
+  &__descriptions {
+    & h2 {
+      font-size: 35px;
+      line-height: 50px;
+      color: $black;
+      width: 100%;
+      max-width: 383px;
+    }
+    & p {
+      font-size: 16px;
+      line-height: 30px;
+      color: $gray;
+      margin-top: 20px;
+      max-width: 427px;
+    }
+    & ul {
+      margin-top: 20px;
+      & li {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 30px;
+        color: $gray;
+        margin-bottom: 15px;
+        & img {
+          width: 24px;
+          height: 24px;
+          padding-right: 10px;
+        }
+      }
     }
   }
 }
