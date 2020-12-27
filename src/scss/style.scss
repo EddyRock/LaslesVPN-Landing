@@ -15,10 +15,16 @@ body {
   &-dark {
     background-color: $light-grey;
     width: 100%;
-    &__wrapper {
+    &__small {
       width: 100%;
       max-width: 1090px;
       margin: auto;
+    }
+    &__medium {
+      width: 100%;
+      max-width: 1135px;
+      margin: auto;
+
     }
   }
 }
@@ -357,5 +363,35 @@ body {
     max-width: 1060px;
     height: 537px;
     margin-top: 156px;
+  }
+}
+
+.partners {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1135px;
+  margin-top: 35px;
+  &__partner-item {
+    width: 100%;
+    max-width: 200px;
+    height: 112px;
+    background-repeat: no-repeat;
+    background-position: center;
+    &--netflix {
+      background-image: url("../img/netflix.svg");
+    }
+
+    &--reddit {
+      background-image: url("../img/reddit.svg");
+    }
+
+    &--discord {
+      background-image: url("../img/discord.svg");
+    }
+
+    &--spotify {
+      background-image: url("../img/spotify.svg");
+    }
   }
 }
