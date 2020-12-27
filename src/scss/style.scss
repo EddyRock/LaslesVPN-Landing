@@ -2,6 +2,10 @@
 @import "./fonts.scss";
 @import "./colors.scss";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Rubik', sans-serif;
 }
@@ -20,11 +24,17 @@ body {
       max-width: 1090px;
       margin: auto;
     }
+
     &__medium {
       width: 100%;
       max-width: 1135px;
       margin: auto;
+    }
 
+    &__large {
+      width: 100%;
+      max-width: 1140px;
+      margin: auto;
     }
   }
 }
@@ -392,6 +402,103 @@ body {
 
     &--spotify {
       background-image: url("../img/spotify.svg");
+    }
+  }
+}
+
+.customers {
+  margin-top: 50px;
+
+  &__title {
+    font-size: 35px;
+    line-height: 50px;
+    color: $black;
+    text-align: center;
+    width: 100%;
+    max-width: 447px;
+    margin: auto;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    margin: auto;
+    color: $gray;
+    width: 100%;
+    max-width: 555px;
+    margin-top: 20px;
+  }
+
+  &__slider {
+    display: flex;
+    margin-top: 60px;
+    width: 100%;
+    outline: 1px solid red;
+    overflow: hidden;
+    &-item {
+      width: 100%;
+      max-width: 400px;
+      min-width: 400px;
+      padding: 15px;
+      border: 2px solid $light-red;
+      border-radius: 10px;
+      margin-right: 50px;
+
+      &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      &-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: red;
+      }
+
+      &-left-side {
+        display: flex;
+        align-items: center;
+      }
+
+      &-title {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        & h2 {
+          font-size: 18px;
+          line-height: 30px;
+          color: $black;
+        }
+
+        & p {
+          font-size: 14px;
+          line-height: 30px;
+          color: $gray;
+        }
+      }
+
+      &-сappraisal {
+        display: flex;
+        align-items: center;
+        & img {
+          margin-left: 5px;
+          width: 18px;
+          height: 18px;
+        }
+      }
+
+      &-content {
+        margin-top: 16px;
+        & p {
+          font-size: 16px;
+          line-height: 30px;
+          color: $black;
+        }
+      }
     }
   }
 }
