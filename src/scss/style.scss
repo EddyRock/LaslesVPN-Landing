@@ -230,6 +230,7 @@ body {
     color: $black;
     text-align: center;
   }
+
   & p {
     font-size: 16px;
     line-height: 30px;
@@ -240,17 +241,20 @@ body {
     margin-top: 20px;
     font-weight: 300;
   }
+
   &__wrapper {
     display: flex;
     justify-content: space-around;
     margin-top: 60px;
   }
+
   &__item-banner {
     display: block;
     max-width: 144px;
     margin: auto;
     margin-top: 80px;
   }
+
   &__item {
     display: flex;
     flex-direction: column;
@@ -323,5 +327,35 @@ body {
         transition: all 0.3s ease 0s;
       }
     }
+  }
+}
+
+.network {
+  margin-top: 160px;
+  & h2 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    color: $black;
+    width: 100%;
+    max-width: 383px;
+    margin: auto;
+    text-align: center;
+  }
+  & p {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    margin: auto;
+    color: $gray;
+    width: 100%;
+    max-width: 555px;
+    margin-top: 20px;
+  }
+  & img {
+    width: 100%;
+    max-width: 1060px;
+    height: 537px;
+    margin-top: 156px;
   }
 }
