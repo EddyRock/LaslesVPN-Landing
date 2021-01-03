@@ -17,7 +17,7 @@ body {
   padding-top: 45px;
 
   &-dark {
-    background-color: $light-grey;
+    background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
     width: 100%;
     &__small {
       width: 100%;
@@ -238,7 +238,6 @@ body {
 
 .plan {
   padding-top: 80px;
-  background-color: $light-grey;
 
   & h2 {
     font-size: 35px;
@@ -510,7 +509,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 85px;
-    padding-bottom: 205px;
     &-points {
       display: flex;
     }
@@ -550,6 +548,105 @@ body {
         background-color: $light-red;
         border-radius: 50%;
       }
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+  max-width: 1140px;
+  padding: 60px 70px;
+  border-radius: 10px;
+  background-color: $white;
+}
+
+footer {
+  background-color: $medium-grey-lighten;
+  width: 100%;
+  padding-top: 190px;
+  padding-bottom: 100px;
+}
+
+.footer {
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      & img {
+        width: 149px;
+        height: 36px;
+      }
+    }
+
+    &__right {
+      display: flex;
+      width: 100%;
+      max-width: 570px;
+      &-list {
+        width: 100%;
+        max-width: 200px;
+        & h4 {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 30px;
+          color: $black;
+          margin-bottom: 20px;
+        }
+        & li {
+          font-size: 16px;
+          line-height: 30px;
+          color: $gray;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &__description {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 320px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: $black;
+      & span {
+        font-weight: 500;
+      }
+    }
+
+    &__socials {
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      &-button {
+        background-position: center;
+        background-color: $light-red;
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        box-shadow: 0px 15px 54px rgba(13, 16, 37, 0.35);
+        margin-right: 20px;
+        &--facebook {
+          background-image: url(../img/facebook.svg);
+        }
+        &--twitter {
+          background-image: url(../img/twitter.svg);
+        }
+        &--instagram {
+          background-image: url(../img/instagram.svg);
+        }
+      }
+    }
+    &__label {
+      font-size: 16px;
+      line-height: 30px;
+      color: $grey-lighten;
     }
   }
 }
