@@ -12,9 +12,9 @@ body {
 
 .main {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1145px;
   margin: auto;
-  padding-top: 45px;
+  padding: 45px 10px 0px 10px;
 
   &-dark {
     background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
@@ -51,6 +51,7 @@ body {
   &__logo {
     width: 100%;
     max-width: 149px;
+    min-width: 149px;
     height: 37px;
     background-image: url("../img/logo.png");
     background-repeat: no-repeat;
@@ -60,6 +61,7 @@ body {
   &__menu {
     width: 100%;
     max-width: 451px;
+    min-width: 451px;
     & ul {
       display: flex;
       list-style: none;
@@ -79,6 +81,7 @@ body {
 
   &__sign {
     display: flex;
+    min-width: 233px;
 
     &-in {
       font-weight: 500;
