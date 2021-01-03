@@ -32,6 +32,7 @@ body {
     }
 
     &__large {
+      position: relative;
       width: 100%;
       max-width: 1140px;
       margin: auto;
@@ -227,8 +228,8 @@ body {
         color: $gray;
         margin-bottom: 15px;
         & img {
-          width: 24px;
-          height: 24px;
+          width: 35px;
+          height: 35px;
           padding-right: 10px;
         }
       }
@@ -509,6 +510,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 85px;
+    margin-bottom: 180px;
     &-points {
       display: flex;
     }
@@ -552,12 +554,49 @@ body {
   }
 }
 
-.banner {
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: 1140px;
   padding: 60px 70px;
   border-radius: 10px;
   background-color: $white;
+  position: absolute;
+  right: calc(50% - 570px);
+  bottom: -315px;
+  box-shadow: 0px 15px 54px rgba(13, 16, 37, 0.10);
+
+  & h2 {
+    width: 100%;
+    max-width: 370px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 45px;
+    color: $black
+  }
+
+  & p {
+    font-size: 16px;
+    line-height: 30px;
+    color: $gray;
+    margin-top: 20px;
+  }
+
+  & button {
+    width: 100%;
+    max-width: 250px;
+    padding: 18px 55px;
+    background-color: $light-red;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: bold;
+    color: $white;
+    border-radius: 10px;
+    box-shadow: 0px 15px 54px rgba(245, 56, 56, 0.35);
+    height: 60px;
+  }
 }
 
 footer {
