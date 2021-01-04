@@ -1,6 +1,7 @@
 @import "./reset.scss";
 @import "./fonts.scss";
 @import "./colors.scss";
+@import "./media.scss";
 
 * {
   box-sizing: border-box;
@@ -15,6 +16,9 @@ body {
   max-width: 1145px;
   margin: auto;
   padding: 45px 10px 0px 10px;
+  @include respond-to(medium-screens) {
+    padding: 0px 0px 0px 0px;
+  }
 
   &-dark {
     background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
@@ -47,6 +51,31 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  @include respond-to(medium-screens) {
+      display: none;
+  }
+  &--mobile {
+    display: none;
+    height: 64px;
+    padding: 0px 10px 0px 10px;
+    box-shadow: 0px 15px 54px rgba(13, 16, 37, 0.05);
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $gray;
+    @include respond-to(medium-screens) {
+      display: flex;
+    }
+
+    &__logo {
+      width: 100%;
+      max-width: 149px;
+      min-width: 149px;
+      height: 37px;
+      background-image: url("../img/logo.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 
   &__logo {
     width: 100%;
@@ -62,6 +91,32 @@ body {
     width: 100%;
     max-width: 451px;
     min-width: 451px;
+    &--mobile {
+      display: none;
+      width: 100%;
+      background-color: $white;
+      padding: 15px;
+      position: absolute;
+      left: 0;
+      top: 64px;
+      & ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        & li {
+          margin-bottom: 40px;
+          & a {
+            text-decoration: none;
+            font-size: 24px;
+            line-height: 19px;
+            color: $gray;
+          }
+        }
+      }
+    }
+
     & ul {
       display: flex;
       list-style: none;
@@ -82,13 +137,15 @@ body {
   &__sign {
     display: flex;
     min-width: 233px;
-
     &-in {
       font-weight: 500;
       font-size: 16px;
       line-height: 19px;
       color: $black;
       margin-right: 30px;
+      &--mobile {
+        font-size: 24px;
+      }
     }
 
     &-up {
@@ -96,6 +153,9 @@ body {
       color: $red;
       border: 1px solid $red;
       border-radius: 50px;
+      &--mobile {
+        font-size: 24px;
+      }
     }
   }
 }
