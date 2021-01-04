@@ -17,7 +17,7 @@ body {
   margin: auto;
   padding: 45px 10px 0px 10px;
   @include respond-to(medium-screens) {
-    padding: 0px 0px 0px 0px;
+    padding: 0;
   }
 
   &-dark {
@@ -162,15 +162,28 @@ body {
 
 .hero {
   padding-top: 88px;
+  @include respond-to(medium-screens) {
+    padding: 45px 10px 0px 10px;
+  }
 
   &__sides-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include respond-to(medium-screens) {
+      flex-direction: column-reverse;
+    }
   }
   &__left-side {
     width: 100%;
     max-width: 555px;
+    @include respond-to(medium-screens) {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__heading {
@@ -178,6 +191,11 @@ body {
     font-weight: 500;
     font-size: 50px;
     line-height: 70px;
+    @include respond-to(medium-screens) {
+      font-size: 35px;
+      line-height: 50px;
+      text-align: center;
+    }
     & span {
       font-weight: bold;
     }
@@ -188,6 +206,9 @@ body {
     font-size: 16px;
     line-height: 30px;
     color: $gray;
+    @include respond-to(medium-screens) {
+      text-align: center;
+    }
   }
 
   &__get-started {
@@ -209,6 +230,11 @@ body {
     background-image: url("../img/hero.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    @include respond-to(medium-screens) {
+      max-width: 400px;
+      height: 200px;
+    }
   }
 
   &__descriptions {
