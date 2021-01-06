@@ -16,6 +16,7 @@ body {
   max-width: 1145px;
   margin: auto;
   padding: 45px 10px 0px 10px;
+  min-width: 320px;
   @include respond-to(medium-screens) {
     padding: 0;
   }
@@ -27,6 +28,9 @@ body {
       width: 100%;
       max-width: 1090px;
       margin: auto;
+      @include respond-to(medium-screens) {
+        padding: 0 15px;
+      }
     }
 
     &__medium {
@@ -255,26 +259,46 @@ body {
     align-items: center;
     border-right: 2px solid $cream;
     height: 125px;
-
+    padding: 0px 5px 0px 5px;
+    @include respond-to(medium-screens) {
+      flex-direction: column;
+    }
+    &:last-child {
+      border: none;
+    }
     & img {
       width: 55px;
       height: 55px;
+      @include respond-to(medium-screens) {
+        margin: auto;
+        margin-bottom: 10px;
+      }
     }
   }
 
   &__subtitle {
     margin-left: 35px;
+    @include respond-to(medium-screens) {
+      margin-left: 0;
+      text-align: center;
+    }
 
     & h4 {
       font-weight: bold;
       font-size: 25px;
       color: $black;
       padding-bottom: 5px;
+      @include respond-to(medium-screens) {
+        font-size: 18px;
+      }
     }
 
     & p {
       font-size: 20px;
       color: $gray;
+      @include respond-to(medium-screens) {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -283,13 +307,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 53px;
-  padding-bottom: 131px;
+  padding: 54px 0px 131px 0px;
+  @include respond-to(medium-screens) {
+    flex-direction: column;
+    padding-bottom: 90px;
+    padding: 54px 5px 131px 5px;
+  }
 
   & img {
     width: 100%;
     max-width: 508px;
     height: 414px;
+    @include respond-to(medium-screens) {
+      height: auto;
+    }
   }
 
   &__descriptions {
@@ -299,6 +330,10 @@ body {
       color: $black;
       width: 100%;
       max-width: 383px;
+      @include respond-to(medium-screens) {
+        max-width: 100%;
+        text-align: center;
+      }
     }
     & p {
       font-size: 16px;
@@ -306,9 +341,20 @@ body {
       color: $gray;
       margin-top: 20px;
       max-width: 427px;
+      @include respond-to(medium-screens) {
+        max-width: 100%;
+        text-align: center;
+        font-size: 20px;
+        padding: 0px 45px;
+      }
     }
     & ul {
       margin-top: 20px;
+      @include respond-to(medium-screens) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       & li {
         display: flex;
         align-items: center;
@@ -316,6 +362,9 @@ body {
         line-height: 30px;
         color: $gray;
         margin-bottom: 15px;
+        @include respond-to(medium-screens) {
+          font-size: 18px;
+        }
         & img {
           width: 35px;
           height: 35px;
@@ -351,13 +400,22 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 60px;
+    @include respond-to(medium-screens) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__item-banner {
     display: block;
+    width: 100%;
     max-width: 144px;
     margin: auto;
     margin-top: 80px;
+    transition: all 0.3s ease 0s;
+    @include respond-to(medium-screens) {
+      max-width: 250px;
+    }
   }
 
   &__item {
@@ -370,6 +428,11 @@ body {
     border: 2px solid #dddddd;
     border-radius: 10px;
     transition: all 0.3s ease 0s;
+    @include respond-to(medium-screens) {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
 
     &:hover {
       border-color: $light-red;
@@ -390,6 +453,9 @@ body {
       & span {
         color: $gray;
       }
+      @include respond-to(medium-screens) {
+        font-size: 35px;
+      }
     }
 
     & ul {
@@ -397,6 +463,12 @@ body {
       max-width: 200px;
       margin: auto;
       margin-top: 30px;
+      @include respond-to(medium-screens) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+      }
     }
 
     & li {
@@ -406,6 +478,9 @@ body {
       line-height: 30px;
       color: $gray;
       margin-bottom: 10px;
+      @include respond-to(medium-screens) {
+        font-size: 18px;
+      }
       & img {
         margin-right: 20px;
       }
@@ -462,21 +537,31 @@ body {
     max-width: 1060px;
     height: 537px;
     margin-top: 156px;
+    @include respond-to(medium-screens) {
+      height: auto;
+      margin-top: 80px;
+    }
   }
 }
 
 .partners {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 1135px;
   margin-top: 35px;
+  @include respond-to(medium-screens) {
+    justify-content: center;
+  }
   &__partner-item {
     width: 100%;
     max-width: 200px;
+    min-width: 200px;
     height: 112px;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 0px 5px 0px 5px;
     &--netflix {
       background-image: url("../img/netflix.svg");
     }
@@ -497,6 +582,7 @@ body {
 
 .customers {
   margin-top: 50px;
+  padding: 0 7px;
 
   &__title {
     font-size: 35px;
@@ -600,6 +686,9 @@ body {
     align-items: center;
     margin-top: 85px;
     margin-bottom: 180px;
+    @include respond-to(medium-screens) {
+      margin-bottom: 0;
+    }
     &-points {
       display: flex;
     }
@@ -652,10 +741,13 @@ body {
   padding: 60px 70px;
   border-radius: 10px;
   background-color: $white;
-  position: absolute;
-  right: calc(50% - 570px);
-  bottom: -315px;
+  margin: auto;
   box-shadow: 0px 15px 54px rgba(13, 16, 37, 0.10);
+  @include respond-to(medium-screens) {
+    position: relative;
+    margin-top: 20px;
+    flex-direction: column;
+  }
 
   & h2 {
     width: 100%;
@@ -685,6 +777,7 @@ body {
     border-radius: 10px;
     box-shadow: 0px 15px 54px rgba(245, 56, 56, 0.35);
     height: 60px;
+    min-width: 250px;
   }
 }
 
@@ -693,6 +786,9 @@ footer {
   width: 100%;
   padding-top: 190px;
   padding-bottom: 100px;
+  @include respond-to(medium-screens) {
+    padding: 40px 5px 60px 5px;
+  }
 }
 
 .footer {
@@ -702,6 +798,10 @@ footer {
     width: 100%;
     max-width: 1140px;
     margin: auto;
+    @include respond-to(medium-screens) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
 
     &__left {
       display: flex;
