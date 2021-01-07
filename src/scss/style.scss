@@ -755,7 +755,10 @@ body {
     font-weight: 500;
     font-size: 35px;
     line-height: 45px;
-    color: $black
+    color: $black;
+    @include respond-to(medium-screens) {
+      text-align: center;
+    }
   }
 
   & p {
@@ -763,6 +766,9 @@ body {
     line-height: 30px;
     color: $gray;
     margin-top: 20px;
+    @include respond-to(medium-screens) {
+      text-align: center;
+    }
   }
 
   & button {
@@ -778,6 +784,9 @@ body {
     box-shadow: 0px 15px 54px rgba(245, 56, 56, 0.35);
     height: 60px;
     min-width: 250px;
+    @include respond-to(medium-screens) {
+      margin-top: 15px;
+    }
   }
 }
 
