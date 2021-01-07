@@ -21,9 +21,9 @@
     </div>
     <div class="main-dark__large">
       <%= _.template(require('./../includes/customers.html').default)(data) %>
-      <%= _.template(require('./../includes/subscribe.html').default)(data) %>
     </div>
   </div>
+  <%= _.template(require('./../includes/subscribe.html').default)(data) %>
   <%= _.template(require('./../includes/footer.html').default)(data) %>
   <script src="js/bundle.js"></script>
 </body>
