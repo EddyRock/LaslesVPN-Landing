@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a28efb31-08da-4ba1-b9ee-c9ad5f647676" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/article.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/article_new.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/featured-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/dist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/img/visual_studio_code.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +67,8 @@
       <workItem from="1609598132532" duration="4708000" />
       <workItem from="1609667754183" duration="10839000" />
       <workItem from="1609748254375" duration="1694000" />
-      <workItem from="1609753375023" duration="5621000" />
+      <workItem from="1609753375023" duration="6037000" />
+      <workItem from="1610026286226" duration="247000" />
     </task>
     <servers />
   </component>
